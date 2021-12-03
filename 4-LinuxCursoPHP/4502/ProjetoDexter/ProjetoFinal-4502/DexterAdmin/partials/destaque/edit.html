@@ -1,0 +1,40 @@
+<h1 class="title_page">Editar Destaque</h1>
+<form method="post" class="form_model">
+    <fieldset>
+        <input type="hidden" value="{{destaque.id}}" id="id" name="id" />
+        <div class="line_form">
+            <label for="titulo" class="label_form">Titulo</label>
+            <input
+                ng-model="destaque.titulo"
+                type="text"
+                class="input_text_form"
+                id="titulo"
+                name="titulo"
+                value="{{destaque.titulo}}"/>
+        </div>
+        <div class="line_form">
+            <label for="descricao" class="label_form">Descrição</label>
+            <input
+                ng-model="destaque.descricao"
+                type="text"
+                class="input_text_form"
+                id="descricao"
+                name="descricao"
+                value="{{destaque.descricao}}"/>
+        </div>
+        <div class="line_form">
+            <label for="imagem" class="label_form">Imagem</label>
+            <input
+                ng-model="destaque.imagem"
+                type="text"
+                class="input_text_form"
+                id="imagem"
+                name="imagem"
+                value="{{destaque.imagem}}"/>
+        </div>
+        <div class="line_form">
+            <input type="button" class="button_model input_submit_form" value="Salvar" ng-click="saveDestaque()"/>
+        </div>
+        <span>{{form_message}}</span>
+   </fieldset>
+</form>

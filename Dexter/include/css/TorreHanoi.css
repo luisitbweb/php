@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic);
+body,pre{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    line-height: 1em;
+}
+pre{
+    font-weight: bold;
+    margin: 0px;
+}
+.solucao{
+    display: none;
+}
+#passo_{
+    display: block;
+}

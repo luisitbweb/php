@@ -1,0 +1,27 @@
+<a class="button_top_admin" href="#/destaques/new">Adicionar</a>
+<h1 class="title_page">Destaques</h1>
+
+<table class="table" id="table_destaques" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>
+                Titulo
+            </th>
+            <th>
+                Descricao
+            </th>
+            <th>
+                Editar
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="destaque in destaques">
+            <td>{{destaque.titulo}}</td>
+            <td>{{destaque.descricao}}</td>
+            <td>
+                <a class="button_top_admin" href="#/destaques/edit/{{destaque.id}}">Editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

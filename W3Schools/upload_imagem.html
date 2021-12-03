@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carregar sua foto para sua pagina!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td{vertical-align: top;}
+        </style>
+    </head>
+    <body>
+        <form action="check_image.php" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>Seu nome usuario</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                <tr>
+                    <td>Carregar Imagem</td>
+                    <td>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="262144"/>
+                        <input type="file" name="uploadfile"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p><em>Aceita imagens nos formatos incluidos: GIF, JPG/JPEG e PNG.</em></p></td>
+                </tr>
+                <tr>
+                    <td>Legenda da Imagem</td>
+                    <td><input type="text" name="caption"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" name="submit" value="Carregar"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

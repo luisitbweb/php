@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<encomendas ultimo_id="2">
+  <encomenda id="1" dt_criacao="25/09/1987 12:00;23" dt_edicao="24/09/1298 00:22:33">
+    <origem>SP</origem>
+    <destino>Assis</destino>
+    <atual>Bauru</atual>
+  </encomenda>
+  <encomenda id="2" dt_criacao="25/09/1987 12:00;23" dt_edicao="24/09/1298 00:22:33">
+    <origem>SP</origem>
+    <destino>Assis</destino>
+    <atual>Ourinhos</atual>
+  </encomenda>
+</encomendas>

@@ -1,0 +1,16 @@
+/* 
+    Created on : 20/03/2020, 20:43:02
+    Author     : luiscarlosss
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+body{
+    padding: 3%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+}

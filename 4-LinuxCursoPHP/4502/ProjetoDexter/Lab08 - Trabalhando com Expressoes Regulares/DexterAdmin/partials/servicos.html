@@ -1,0 +1,31 @@
+<a class="button_top_admin" href="#/servicos/new">Adicionar</a>
+<h1 class="title_page">Serviços</h1>
+
+<table class="table" id="table_usuarios" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>
+                Titulo
+            </th>
+            <th>
+                Descricao
+            </th>
+            <th>
+                Home?
+            </th>
+            <th>
+                Editar
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="servico in servicos">
+            <td>{{servico.titulo}}</td>
+            <td>{{servico.descricao}}</td>
+            <td>{{servico.showHome}}</td>
+            <td>
+                <a class="button_top_admin" href="#/servicos/edit/{{servico.id}}">Editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

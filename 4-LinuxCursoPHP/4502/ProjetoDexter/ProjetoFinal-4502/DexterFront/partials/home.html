@@ -1,0 +1,64 @@
+<div id="corpo">
+    <!-- INÍCIO - DESTAQUE -->
+    <section id="destaque_home">
+        <ul>
+            <li ng-repeat="banner in banners" style="background-image: url('{{banner.imagem}}');">
+                <div class="conteudo_padrao">
+                    <h2>{{banner.titulo}}</h2>
+                    <p>{{banner.descricao}}</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- FIM - DESTAQUE -->
+
+    <!-- INÍCIO - VANTAGENS -->
+    <section id="vantagens_home">
+        <div class="conteudo_padrao">
+            <h2 class="titulo_home">Vantagens</h2>
+            <h3 class="subtitulo_home">
+                Veja as vantagens de uma plataforma moderna e flexível para gerenciar a logística do seu negócio
+            </h3>
+
+            <ul>
+                <li ng-repeat="vantagem in vantagens">
+                <img ng-src="{{vantagem.imagem}}" alt="" />
+                    <p>{{vantagem.titulo}}</p>
+                    <span>{{vantagem.descricao}}</span>
+                </li>
+            </ul>
+
+            <a href="#servicos" class="link_botao" title="Veja mais Vantagens">Veja mais Vantagens</a>
+        </div>
+    </section>
+    <!-- FIM - VANTAGENS -->
+
+    <!-- INÍCIO - FUNCIONALIDADES -->
+    <section id="funcionalidades_home">
+        <div class="conteudo_padrao">
+            <h2 class="titulo_home">Funcionalidades</h2>
+            <h3 class="subtitulo_home">
+                As funcionalidades de uma plataforma moderna e flexível para gerenciar a logística do seu negócio
+            </h3>
+
+            <ul>
+                <li ng-repeat="funcionalidade in funcionalidades">
+                <img ng-src="{{funcionalidade.imagem}}" alt="" />
+                    <p>{{funcionalidade.titulo}}</p>
+                    <span>{{funcionalidade.descricao}}</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- FIM - FUNCIONALIDADES -->
+
+    <!-- INÍCIO - CADASTRE-SE -->
+    <section id="cadastre_se_home">
+        <div class="conteudo_padrao">
+            <h2>Você cuida da sua empresa e nós da sua logística</h2>
+            <h3>Cadastre-se agora e tenha 20% de desconto no primeiro ano.</h3>
+            <a href="#cadastre_se" class="link_botao" title="Cadastre-se">Cadastre-se</a>
+        </div>
+    </section>
+    <!-- FIM - CADASTRE-SE -->
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Estudo estrutura switch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../HTML5/w3schools/testevalorespropriedades.css"/>
+    </head>
+    <body>
+        <div>
+            <form method="get" action="estruturaswitch.php">
+                Numero: <input type="number" name="num" autofocus="" required="" min="2" max="100"/><br/>
+                <fieldset id="sexo" ><legend>Operação</legend>
+                    <input type="radio" name="oper" id="dobro" value="1" checked=""/>
+                    <label for="dobro">Dobro</label>
+                    <input type="radio" name="oper" id="cubo" value="2"/>
+                    <label for="cubo">Cubo</label>
+                    <input type="radio" name="oper" id="raiz" value="3"/>
+                    <label for="raiz">Raiz Quadrada</label>
+                </fieldset><br/>
+                
+                <input type="submit" value="Calcular"/>
+            </form>
+        </div>
+    </body>
+</html>

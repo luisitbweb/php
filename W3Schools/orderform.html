@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario de Pedido</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="arquivos/processorder.php" method="post">
+                <table style="border: 0">
+                    <tr style="background-color: #cccccc">
+                        <td style="width: 150px">Item</td>
+                        <td style="width: 15px">Quantity</td>
+                    </tr>
+                    <tr>
+                        <td>Tires</td>
+                        <td style="text-align: center"><input type="text" name="tireqty" size="20" maxlength="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Oil</td>
+                        <td style="text-align: center"><input type="text" name="oilqty" size="20" maxlength="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Spark Plugs</td>
+                        <td style="text-align: center"><input type="text" name="sparkqty" size="20" maxlength="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Endereço</td>
+                        <td style="text-align: center"><input type="text" name="address" size="20" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center"><input type="submit" value="Submit Order"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

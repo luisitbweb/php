@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<title>Formulario</title>
+
+		<meta charset="UTF-8"/>
+		
+		<style>
+			h1{
+				font: 15pt Arial;
+				color: #171559;
+				font-weight: bold;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<h1>Digite seus dados</h1>
+
+			<form action="formulario.php" id="valor" method="get">
+
+				<fieldset><legend>Digite seu Nome</legend>
+			
+					<input type="text" name="n" autofocus="autofocus" required="required"/>
+				
+				</fieldset><br/>
+				
+				<fieldset><legend>Digite o Ano de Nascimento</legend>
+			
+					<input type="number" name="a" placeholder=" aaaa " required="required"/>
+				
+				</fieldset><br/>
+				
+				<fieldset><legend>Escolha o Sexo</legend>
+				
+					<input type="radio" name="s" id="m" value="homem" checked/><label for="m"> Masculino</label><br/>
+				
+					<input type="radio" name="s" id="f" value="mulher"/><label for="f"> Feminino</label><br/>
+				
+				</fieldset><br/>
+
+				<input type="submit" value="Enviar"/>
+
+			</form>
+
+	</body>
+
+</html>

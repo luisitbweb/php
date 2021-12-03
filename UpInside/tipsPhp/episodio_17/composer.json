@@ -1,0 +1,30 @@
+{
+    "name": "luisitb/tips-php",
+    "description": "Study PHP",
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "luiscarlosss",
+            "email": "luis_itb@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+
+    "require": {
+        "coffeecode/datalayer": "1.1.*",
+        "pagarme/pagarme-php": "4.0.*"
+    }
+}

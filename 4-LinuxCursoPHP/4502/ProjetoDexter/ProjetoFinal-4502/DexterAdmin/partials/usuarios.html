@@ -1,0 +1,23 @@
+<a class="button_top_admin" href="#/usuarios/new">Adicionar</a>
+<h1 class="title_page">Usuários</h1>
+
+<table class="table" id="table_usuarios" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>
+                Login
+            </th>
+            <th>
+                Editar
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="usuario in usuarios">
+            <td>{{usuario.login}}</td>
+            <td>
+                <a class="button_top_admin" href="#/usuarios/edit/{{usuario.id}}">Editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

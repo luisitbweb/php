@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03/06/2015, 12:47:26
+    Author     : Luis Carlos
+*/
+@charset "UTF=8";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+header#cabpag{
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+    border: solid #dddddd;
+    text-align: center;
+    background-image: url("../_Imagens/Header.gif");
+    background-repeat: no-repeat;
+    margin-bottom: 3px;
+}

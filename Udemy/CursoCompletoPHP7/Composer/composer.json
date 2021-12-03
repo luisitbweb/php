@@ -1,0 +1,15 @@
+{
+    "name": "udemyphpbr/composer",
+    "description": "Aula PHP Udemy",
+    "type": "project",
+    "authors": [
+        {
+            "name": "luis carlos",
+            "email": "luis_itb@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}

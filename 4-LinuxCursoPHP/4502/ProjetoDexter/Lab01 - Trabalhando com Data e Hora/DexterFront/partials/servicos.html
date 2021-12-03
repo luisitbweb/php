@@ -1,0 +1,24 @@
+<!-- INÍCIO - BREADCRUMB -->
+<div id="breadcrumb" itemprop="breadcrumb">
+    <div class="conteudo_padrao">
+        <a href="#home" title="Home">Home</a> > 
+        <a href="#servicos" title="Serviços">Serviços</a> > 
+        <a href="#servicos" title="Nossos Serviços">Nossos Serviços</a>
+    </div>
+</div>
+<!-- FIM - BREADCRUMB -->
+
+<div id="corpo" class="conteudo_padrao">
+    <h1 class="titulo_site">Nossos Serviços</h1>
+    <h2 class="subtitulo_site">Não importa o tamanho da sua empresa, a Dexter tem a solução certa para você.</h2>
+
+    <ul id="lista_servicos">
+        <li ng-repeat="servico in servicos">
+            <img ng-src="{{servico.imagem}}" alt="" />
+            <p>{{servico.titulo}}</p>
+            <span>{{servico.descricao}}</span>
+        </li>
+    </ul>
+</div>
+
+

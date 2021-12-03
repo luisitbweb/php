@@ -1,0 +1,30 @@
+{
+    "name": "luisitb/tips-php",
+    "description": "Study PHP Carrinho de Compras MVC Ajax",
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "luiscarlosss",
+            "email": "luis_itb@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php",
+            "source/Minify.php"
+        ]
+    },
+
+    "require": {
+        "matthiasmullie/minify": "1.3.*"
+    }
+}

@@ -1,0 +1,20 @@
+<h1 class="title_page">Editar Usuário</h1>
+<form method="post" class="form_model">
+    <fieldset>
+        <input type="hidden" value="{{user.id}}" id="id" name="id" />
+        <div class="line_form">
+            <label for="login_usuario" class="label_form">Login</label>
+            <input
+                ng-model="user.login"
+                type="text"
+                class="input_text_form"
+                id="login_usuario"
+                name="login_usuario"
+                value="{{user.login}}"/>
+        </div>
+        <div class="line_form">
+            <input type="button" class="button_model input_submit_form" value="Salvar" ng-click="saveUser()"/>
+        </div>
+        <span>{{form_message}}</span>
+   </fieldset>
+</form>

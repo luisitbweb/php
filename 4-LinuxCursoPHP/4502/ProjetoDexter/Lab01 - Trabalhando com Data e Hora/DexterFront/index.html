@@ -1,0 +1,102 @@
+<!doctype html>
+<html dir="ltr" lang="pt-BR" ng-app="Dexter">
+	<head>
+		<meta charset="utf-8" />
+		<title>Dexter Courier – Projeto Final</title>
+
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+		<meta name="viewport" content="width=1200, initial-scale=1" />
+		<meta name="description" content="Lorem ipsum dolor sit amet. Fusce luctus pretium quam quis malesuada." />
+		<meta name="keywords" content="Lorem, ipsum, dolor, sit, amet, pretium, quam, quis, malesuada" />
+		<meta name="author" content="Dexter Courier" />
+
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:url" content="http://dexter-4605.rhcloud.com/" />
+		<meta property="og:title" content="Dexter Courier" />
+		<meta property="og:site_name" content="Dexter Courier" />
+		<meta property="og:description" content="Lorem ipsum dolor sit amet luctus pretium quam quis malesuada." />
+		<meta property="og:image" content="http://dexter-4605.rhcloud.com/assets/images/logo_dexter_share.png" />
+		<meta property="og:type" content="website" />
+
+		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="plugins/bxslider/jquery.bxslider.css" />
+        <link rel="stylesheet" href="css/app.css">
+
+		<script src="libs/jquery/jquery-1.11.2.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="assets/plugins/html5.js"></script>
+			<script src="assets/plugins/selectivizr.js"></script>
+		<![endif]-->
+		<script src="plugins/placeholder/jquery-placeholder.js"></script>
+
+        <script src="libs/angular/angular.js"></script>
+        <script src="libs/angular/angular-route.js"></script>
+        <script src="libs/angular/angular-resource.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+	</head>
+	<body>
+		<main id="website">
+			<!-- INÍCIO - TOPO DO SITE -->
+			<header id="topo">
+				<div class="conteudo_padrao">
+					<h1 id="logo"><a href="#home" title="Dexter Courier">Dexter Courier</a></h1> 
+
+					<!-- INÍCIO - MENU -->
+					<nav id="menu">
+						<ul>
+							<li><a href="#home" title="Home">Home</a></li>
+							<li>
+								<a href="#quem_somos" title="Sobre a Dexter">Sobre a Dexter</a>
+								<ul class="submenu">
+									<li><a href="#quem_somos" title="Quem Somos">Quem Somos</a></li>
+									<li><a href="#nossos_valores" title="Nossos Valores">Nossos Valores</a></li>
+									<li><a href="#linha_do_tempo" title="Linha do Tempo">Linha do Tempo</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#servicos" title="Serviços">Serviços</a>
+								<ul class="submenu">
+									<li><a href="#servicos" title="Nossos Serviços">Nossos Serviços</a></li>
+								</ul>
+							</li>
+							<li><a href="#cadastre_se" title="Cadastre-se">Cadastre-se</a></li>
+							<li><a href="#contato" title="Contato">Contato</a></li>
+						</ul>
+					</nav>
+					<!-- FIM - MENU -->
+				</div>
+			</header>
+			<!-- FIM - TOPO DO SITE -->
+
+			<!-- INÍCIO - CORPO DO SITE -->
+
+            <div ng-view></div>
+
+            <!-- FIM - CORPO DO SITE -->
+
+            <!-- INÍCIO - RODAPÉ DO SITE -->
+			<footer id="rodape">
+				<div class="conteudo_padrao">
+					<!-- INÍCIO - REDES SOCIAIS -->
+					<a class="rede_social rede_social_fb" href="https://www.facebook.com/dextercourier4linux" target="_blank" title="Facebook">Facebook</a>
+					<a class="rede_social rede_social_tw" href="https://twitter.com/dextercourier" target="_blank" title="Twitter">Twitter</a>
+					<a class="rede_social rede_social_gp" href="https://plus.google.com/" target="_blank" title="Google Plus">Google Plus</a>
+					<!-- FIM - REDES SOCIAIS -->
+
+                    <p>&copy; Dexter Courier Logistica S/A.</p>
+				</div>
+			</footer>
+			<!-- FIM - RODAPÉ DO SITE -->
+		</main>
+        <script src="plugins/bxslider/jquery.bxslider.js"></script>
+        <script src="js/dexter.js"></script>
+	</body>
+</html>

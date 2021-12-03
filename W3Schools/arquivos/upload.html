@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> Administration - Upload new files</title>
+    </head>
+    <body>
+
+        <h1> Upload new file</h1>
+
+        <form enctype="multipart/form-data" action="upload.php" method="post">
+
+            <input type="hidden" name="Max_file_size" value="1000000">
+            upload this file:<input name="userfile" type="file">  
+            <input type="submit" value="Send File">
+        </form>
+    </body>
+</html>

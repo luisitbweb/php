@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursos>
+    metacharset = "UTF-8"
+	<curso versao="2.0">
+		<id>500</id>
+		<nome>Desenvolvimento Web com PHP</nome>
+		<preco>1000</preco>
+		<carga_horaria>40</carga_horaria>
+	</curso>
+	<curso versao="3.0">
+		<id>501</id>
+		<nome>Orientação a Objetos com PHP</nome>
+		<preco>1200</preco>
+		<carga_horaria>40</carga_horaria>
+	</curso>
+	<curso versao="4.0">
+		<id>502</id>
+		<nome>Desenvolvimento Enterprise com PHP</nome>
+		<preco>1400</preco>
+		<carga_horaria>40</carga_horaria>
+	</curso>
+</cursos>

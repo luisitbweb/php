@@ -1,0 +1,25 @@
+{
+    "name": "UpInside/fsphp",
+    "description": "Full Stack PHP Developer",
+    "type": "WebSeriePHPJeitoCerto",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Luis Carlos",
+            "email": "cursos@upinside.com.br",
+            "homepage": "https://getcomposer.org/",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-lib": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "~6.1"
+    }
+}

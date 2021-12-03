@@ -1,0 +1,32 @@
+{
+    "name": "luisitb/tips-php",
+    "description": "Study PHP carrinho de compras MVC Ajax",
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "luiscarlosss",
+            "email": "luis_itb@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+
+    "require": {
+        "ext-json": "*",
+        "coffeecode/router": "1.0.*",
+        "coffeecode/datalayer": "1.1.*",
+        "league/plates": "v4.0.0-alpha"
+    }
+}

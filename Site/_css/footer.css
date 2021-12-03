@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+    Created on : 03/06/2015, 12:47:42
+    Author     : Luis Carlos
+*/
+@charset "UTF=8";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+footer#rp{
+    float: bottom;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: solid #dddddd;
+    background-color: #b2b2b2;
+    clear: both;
+    position: relative;
+    color: #ffffff;
+    font-size: 12pt;
+    font-family: Titillium web;
+    margin-bottom: 15px;
+}
+.icone{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12pt;
+    font-family: Titillium web;
+    padding: 10px;
+}
+#contato{
+    float: bottom;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+#desc{
+    padding: 8px;
+    margin-left: 10px;
+}
+#ft{
+    float: right;
+    margin-right: 0px;
+}

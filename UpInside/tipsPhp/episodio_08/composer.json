@@ -1,0 +1,30 @@
+{
+    "name": "luisitb/tips-php",
+    "description": "Study PHP",
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "luiscarlosss",
+            "email": "luis_itb@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+
+    "require": {
+        "fzaninotto/faker": "1.8.*",
+        "coffeecode/cropper": "1.2.*"
+    }
+}

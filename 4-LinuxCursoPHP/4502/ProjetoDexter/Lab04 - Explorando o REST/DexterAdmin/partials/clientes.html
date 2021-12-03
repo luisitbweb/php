@@ -1,0 +1,31 @@
+<a class="button_top_admin" href="#/clientes/new">Adicionar</a>
+<h1 class="title_page">Clientes</h1>
+
+<table class="table" id="table_clientes" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                CPF/CNPJ
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Editar
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="cliente in clientes">
+            <td>{{cliente.nome}}</td>
+            <td>{{cliente.cpfCnpj}}</td>
+            <td>{{cliente.email}}</td>
+            <td>
+                <a class="button_top_admin" href="#/clientes/edit/{{cliente.id}}">Editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,32 @@
+@media screen and (max-height: 280px) {
+	#login{
+		min-height: 290px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	#login_website {
+		width: 90%;
+		left: auto;
+		margin-left: 5%;
+	}
+
+	#form_login {
+		width: 290px;
+	}
+
+	#form_login label {
+		width: 80px;
+		padding-right: 5px;
+	}
+
+	.input_form_login {
+		width: 190px;
+	}
+}
+
+@media screen and (max-width: 315px) {
+	#login_website {
+		margin-left: 3%;
+	}
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>arquivo upload</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Upload de vários arquivos</h1>
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <p><input type="file" name="arquivo[]" /></p>
+            <p><input type="file" name="arquivo[]" /></p>
+            <p><input type="file" name="arquivo[]" /></p>
+            <p><input type="file" name="arquivo[]" /></p>
+            <p><input type="file" name="arquivo[]" /></p>
+            <p><input type="submit" value="Enviar" onclick="comprova_extensao(this.form, this.form.type.file)" /></p>
+        </form>
+
+         <script type="text/javascript">
+            function comprova_extensao(form, arquivo) {
+                extensoes_permitidas = new Array(".doc", ".txt", ".pdf", ".docx");
+                meuerro = "";
+                if (!arquivo) {
+                    //Se não tenho arquivo, é porque não se selecionou um arquivo no formulário.
+                    meuerro = "Não foi selecionado nenhum arquivo";
+                } else {
+                    //recupero a extensão deste nome de arquivo
+                    extensao = (arquivo.substring(arquivo.lastIndexOf("."))).toLowerCase();
+                    alert (extensao);
+                    //comprovo se a extensão está entre as permitidas
+                    permitida = false;
+                    for (var i = 0; i < extensoes_permitidas.length; i++) {
+                        if (extensoes_permitidas[i] == extensao) {
+                            permitida = true;
+                            break;
+                        }
+                    }
+                    if (!permitida) {
+                        meuerro = "Comprova a extensão dos arquivos a subir. não se podem subir arquivos com extensões: " + extensoes_permitidas.join();
+                    } else {
+                        //submeto!
+                        alert("Tudo correto. Vou submeter o formulário.");
+                        form.submit();
+                        return 1;
+                    }
+                }
+                //se estou aqui é porque não se pode submeter
+                alert(meuerro);
+                return 0;
+            }
+            /*window.addEventListener('Load', comprova_extensao(), false);*/
+        </script>
+
+    </body>
+</html>

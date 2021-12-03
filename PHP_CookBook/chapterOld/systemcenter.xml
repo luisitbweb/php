@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <CSVImportFormat>
+        <Projection Type="Microsoft.Windows.Computer.ProjectionType">
+            <Seed>
+                <Class Type="Microsoft.Windows.Computer">
+                    <Property ID="PrincipalName"/>
+                    <Property ID="PhysicalProcessors"/>
+                    <Property ID="LogicalProcessors"/>
+                    <Property ID="IPAddress"/>
+                </Class>
+            </Seed>
+            <Component Alias="Custodian">
+                <Seed>
+                    <Class Type="System.Domain.User">
+                        <Property ID="Domain"/>
+                        <Property ID="UserName"/>
+                    </Class>
+                </Seed>
+            </Component>
+        </Projection>
+    </CSVImportFormat>
+</root>

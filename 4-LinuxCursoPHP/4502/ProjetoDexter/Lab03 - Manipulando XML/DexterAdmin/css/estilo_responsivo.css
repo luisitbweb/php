@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+	aside{
+		display: none;
+	}
+	.slicknav_menu{
+		display: block;
+	}
+	.icon_logout{
+		display: none;
+	}
+
+	.content{
+		width: 100% !important;
+		padding: 10px 10px 95px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.table th:nth-child(1), .table td:nth-child(1),
+	.table th:nth-child(2), .table td:nth-child(2){
+		width: 40%;
+	}
+
+	.table th:nth-child(3), .table td:nth-child(3) {
+		display: none;
+	}
+}

@@ -1,0 +1,99 @@
+<h1 class="title_page">Novo Cliente</h1>
+<form method="post" class="form_model">
+    <fieldset>
+        <div class="line_form">
+            <label for="nome" class="label_form">Nome</label>
+            <input 
+                ng-model="cliente.nome"
+                type="text"
+                class="input_text_form"
+                id="nome"
+                name="nome" />
+        </div>
+        <div class="line_form">
+            <label for="cpf_cnpj" class="label_form">Cpf/Cnpj</label>
+            <input  
+                ng-model="cliente.cpf_cnpj"
+                type="text"
+                class="input_text_form"
+                id="cpf_cnpj"
+                name="cpf_cnpj" />
+        </div>
+        <div class="line_form">
+            <label for="telefone" class="label_form">Telefone</label>
+            <input 
+                ng-model="cliente.telefone"
+                type="text"
+                class="input_text_form"
+                id="telefone"
+                name="telefone" />
+        </div>
+        <div class="line_form">
+            <label for="celular" class="label_form">Celular</label>
+            <input 
+                ng-model="cliente.celular"
+                type="text"
+                class="input_text_form"
+                id="celular"
+                name="celular" />
+        </div>
+        <div class="line_form">
+            <label for="email" class="label_form">Email</label>
+            <input 
+                ng-model="cliente.email"
+                type="text"
+                class="input_text_form"
+                id="email"
+                name="email" />
+        </div>
+        <div class="line_form">
+            <label for="cep" class="label_form">CEP</label>
+            <input 
+                ng-model="cliente.cep"
+                type="text"
+                class="input_text_form"
+                id="cep"
+                name="cep" />
+        </div>
+        <div class="line_form">
+            <label for="estado" class="label_form">Estado</label>
+            <input 
+                ng-model="cliente.estado"
+                type="text"
+                class="input_text_form"
+                id="estado"
+                name="estado" />
+        </div>
+        <div class="line_form">
+            <label for="bairro" class="label_form">Bairro</label>
+            <input 
+                ng-model="cliente.bairro"
+                type="text"
+                class="input_text_form"
+                id="bairro"
+                name="bairro" />
+        </div>
+        <div class="line_form">
+            <label for="endereco" class="label_form">Endereço</label>
+            <input 
+                ng-model="cliente.endereco"
+                type="text"
+                class="input_text_form"
+                id="endereco"
+                name="endereco" />
+        </div>
+        <div class="line_form">
+            <label for="cidade" class="label_form">Cidade</label>
+            <input 
+                ng-model="cliente.cidade"
+                type="text"
+                class="input_text_form"
+                id="cidade"
+                name="cidade" />
+        </div>
+        <div class="line_form">
+            <input type="button" class="button_model input_submit_form" value="Salvar" ng-click="saveCliente()"/>
+        </div>
+        <span>{{form_message}}</span>
+   </fieldset>
+</form>

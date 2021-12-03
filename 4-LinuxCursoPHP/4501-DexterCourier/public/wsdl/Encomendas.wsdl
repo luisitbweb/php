@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<wsdl:definitions name="WsSoap"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soapenc="http://schemas.xmlsoap.com/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:tns="http://localhost/Dexter/">
+
+	<wsdl:message name="MensagemRequisicao">
+		<wsdl:part name="id" type="xsd:integer"></wsdl:part>
+	</wsdl:message>
+
+
+	<wsdl:message name="MensagemResposta">
+		<wsdl:part name="resultado" type="xsd:string"></wsdl:part>
+	</wsdl:message>
+
+
+	<wsdl:portType name="WsSoapPortType">
+		<wsdl:operation name="consultarEncomenda">
+			<wsdl:input message="tns:MensagemRequisicao"></wsdl:input>
+			<wsdl:output message="tns:MensagemResposta"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+
+	<wsdl:binding name="WsSoapBinding" type="tns:WsSoapPortType">
+
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+
+		<wsdl:operation name="consultarEncomenda">
+			<soap:operation soapAction="urn:wssoap#consultarEncomenda" />
+			<wsdl:input>
+				<soap:body use="encoded" namespace="urn:wssoap"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" namespace="urn:wssoap"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+
+	<wsdl:service name="WsSoapService">
+		<wsdl:port name="WsSoapPort" binding="tns:WsSoapBinding">
+			<soap:address location="http://localhost/Dexter/ws_soap.php?modulo=Encomendas" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>

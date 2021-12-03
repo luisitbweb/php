@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03/06/2015, 12:47:57
+    Author     : Luis Carlos
+*/
+@charset "UTF=8";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+nav > ul {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 15px;
+    list-style-type: none;
+    background-color: #b2b2b2;
+    border-radius: 10px;
+    border: solid #dddddd;
+}
+span{
+    color: #dddddd;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px;
+}
+a:link{
+    color: #3300ff;
+}
+a:visited{
+    color: #dddddd;
+}
+a:hover{
+    color: #9999ff;
+}
+a:active{
+    color: blue;
+}
+a:focus{
+    color: yellowgreen;
+}
+#login {
+    margin-left: auto;
+}
+textarea:hover{
+    background-color: whitesmoke;
+}
+#botao:hover{
+    background-color: whitesmoke;
+    color: #0000ff;
+}
+input{
+    border-radius: 4px;
+    height: 30px;
+}

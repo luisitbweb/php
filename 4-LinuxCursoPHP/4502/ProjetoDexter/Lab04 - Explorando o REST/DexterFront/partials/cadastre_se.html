@@ -1,0 +1,113 @@
+<!-- INÍCIO - BREADCRUMB -->
+<div id="breadcrumb" itemprop="breadcrumb">
+    <div class="conteudo_padrao">
+        <a href="#home" title="Home">Home</a> > <a href="#cadastre_se" title="Cadastre-se">Cadastre-se</a>
+    </div>
+</div>
+<!-- FIM - BREADCRUMB -->
+
+<div id="corpo" class="conteudo_padrao" ng-controller="CadastreSeController">
+    <h1 class="titulo_site">Cadastre-se</h1>
+    
+    <form method="post" action="" id="cadastro">
+        <fieldset>
+            <div class="normal_2">
+                <label for="nome"><small>*</small>Nome:</label>
+                <input ng-model="cadastro.nome" type="text" name="nome" id="nome" class="input_campo" />
+            </div>
+            <div class="normal_2">
+                <label class="label_radio"><small>*</small>
+                    <input type="radio" class="input_radio" name="cpf_cnpj" id="input_cpf" checked="checked" />CPF
+                </label>
+                <label class="label_radio">
+                    <input type="radio" class="input_radio" name="cpf_cnpj" id="input_cnpj" />CPNJ:
+                </label>
+                <input ng-model="cadastro.cpf" type="text" name="cpf" id="cpf" class="input_campo" />
+                <input ng-model="cadastro.cnpj" type="text" name="cnpj" id="cnpj" class="input_campo" />
+            </div>
+            <div class="normal_1">
+                <label for="telefone">Telefone:</label>
+                <input ng-model="cadastro.telefone" type="text" name="telefone" id="telefone" class="input_campo" />
+            </div>
+            <div class="normal_1">
+                <label for="celular"><small>*</small>Celular:</label>
+                <input ng-model="cadastro.celular" type="text" name="celular" id="celular" class="input_campo" />
+            </div>
+            <div class="normal_2">
+                <label for="email"><small>*</small>E-mail:</label>
+                <input ng-model="cadastro.email" type="text" name="email" id="email" class="input_campo" />
+            </div>
+            <div class="normal_1">
+                <label for="cep"><small>*</small>CEP:</label>
+                <input ng-model="cadastro.cep" type="text" name="cep" id="cep" class="input_campo" />
+            </div>
+            <div class="normal_1">
+                <label for="estado"><small>*</small>Estado:</label>
+                <select ng-model="cadastro.estado" name="estado" id="estado" class="input_campo">
+                    <option value="">Selecione um Estado</option>
+                    <option ng-repeat="estado in estados" value="{{estado}}">{{estado}}</option>
+                </select>
+            </div>
+            <div class="normal_2">
+                <label for="bairro"><small>*</small>Bairro:</label>
+                <input ng-model="cadastro.bairro" type="text" name="bairro" id="bairro" class="input_campo" />
+            </div>
+            <div class="normal_4">
+                <label for="endereco"><small>*</small>Endereço:</label>
+                <input ng-model="cadastro.endereco" type="text" name="endereco" id="endereco" class="input_campo" />
+            </div>
+            <div class="normal_2">
+                <label for="cidade"><small>*</small>Cidade:</label>
+                <input ng-model="cadastro.cidade" type="text" name="cidade" id="cidade" class="input_campo" />
+            </div>
+            <div>
+                <input type="button" value="Cadastrar" class="input_submit" ng-click="validaCadastro() && cadastreSe()"/>
+                <span id="mensagem_submit">{{form_message}}</span>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<script src="plugins/placeholder/jquery-placeholder.js"></script>
+<script src="plugins/maskedinput/jquery-maskedinput.js"></script>
+<script>
+    $(document).ready(function () {
+        if($("#input_cpf").is(":checked")){
+            $("#cpf").css("display", "block");
+            $("#cnpj").css("display", "none");
+        }
+        else{
+            $("#cpf").css("display", "none");
+            $("#cnpj").css("display", "block");
+        }
+
+        $("#input_cpf").click(function(){
+            $("#cpf").css("display", "block");
+            $("#cnpj").css("display", "none");
+        });
+        $("#input_cnpj").click(function(){
+            $("#cnpj").css("display", "block");
+            $("#cpf").css("display", "none");
+        });
+
+        $('#cpf').mask("999.999.999-99");
+        $('#cnpj').mask("99.999.999/9999-99");
+        $('#telefone').mask("(99) 9999-9999");
+
+        $('#celular').focusout(function(){
+            var phone, element;
+            element = $(this);
+            element.unmask();
+            phone = element.val().replace(/\D/g, '');
+
+            if(phone.length > 10) {
+                element.mask("(99) 99999-999?9");
+            } else {
+                element.mask("(99) 9999-9999?9");
+            }
+        }).trigger('focusout'); 
+
+        $('#cep').mask("99999-999");
+    });
+</script>
+

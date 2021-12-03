@@ -1,0 +1,31 @@
+<a class="button_top_admin" href="#/mensagens/new">Adicionar</a>
+<h1 class="title_page">Mensagens</h1>
+
+<table class="table" id="table_usuarios" border="0" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                Assunto
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Editar
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="mensagem in mensagens">
+            <td>{{mensagem.nome}}</td>
+            <td>{{mensagem.assunto}}</td>
+            <td>{{mensagem.email}}</td>
+            <td>
+                <a class="button_top_admin" href="#/mensagens/edit/{{mensagem.id}}">Editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

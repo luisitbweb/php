@@ -1,0 +1,26 @@
+{
+  "name": "luisitb/phpdojeitocertooop",
+  "description": "Projeto de Exemplo Sobre POO da Webserie PHP Do jeito Certo",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Luis Carlos",
+      "email": "luis_itb@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+    "ext-pdo": "*",
+    "coffeecode/datalayer": "1.1.*",
+    "fzaninotto/faker": "1.8.*",
+    "phpmailer/phpmailer": "~6.1"
+  }
+}

@@ -1,0 +1,2 @@
+[2020-05-09T00:44:49.836389-03:00] web.WARNING: Olá Mundo! {"logger":true} []
+[2020-05-09T00:44:49.838212-03:00] web.ERROR: Olá Mundo! {"logger":true} []

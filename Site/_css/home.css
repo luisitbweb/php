@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/05/2015, 13:26:22
+    Author     : Luís Carlos
+*/
+@charset "UTF=8";
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+body{
+	font-family: Titillium web;
+	font-size: 11pt;
+	background-image: url("../_imagens/background-fundo.jpg");
+	color: rgba(0,0,0,1);
+}
+div#inface{
+        width: 900px;
+	background-color: #ffffff;
+	margin: 0px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,10);
+	padding: 5px;
+}
+
+aside#cra{
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    margin-top: 5px;
+    text-align: center;
+}
+section#cs{
+    float: inside;
+    position: absolute;
+    width: 473px;
+    height: 500px;
+    margin-left: 210px;
+    margin-top: 5px;
+    text-align: center;
+}
+header#ca{
+    width: auto;
+    height: 80px;
+    margin: 5px;
+}
+article#ar{
+    width: auto;
+    height: 260px;
+    margin: 5px;
+}
+footer#ra{
+    width: auto;
+    height: 80px;
+    margin: 5px;
+}
+#al{
+    float: right;
+    position: relative;
+    width: 200px;
+    height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 680px;
+    text-align: center;
+}
+#ola{
+    width: 110px;
+    height: 100px;
+    background: red;
+    margin-bottom: 15px;
+    color: white;
+    -webkit-animation: ola 2s infinite linear alternate;
+    animation: ola 2s infinite linear alternate;
+}
+@-webkit-keyframes ola{
+    to{-webkit-transform: rotateY(180deg);}
+}
+@keyframes ola{
+    to{transform: rotateY(180deg);}
+}
+#mundo{
+    text-align: center;
+    padding: 25px;
+}
